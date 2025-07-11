@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+ 
+ .header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 20px;
+     margin: 0;
+     background-color: black;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+ }
+ 
+ .header img{
+    height: 50px;
+    width: auto;
+ }
+ 
+ .nav-links ul {
+     display: flex;
+ }
+ 
+ .nav-links ul li {
+     list-style: none;
+     padding: 0 20px;
+     position: relative;
+ }
+ 
+ .nav-links ul li i {
+     font-size: 25px;
+ }
+ 
+ .nav-links ul li a {
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: 600;
+     color: azure;
+     transition: 0.3s ease;
+ }
+ 
+ .nav-links ul li a:hover,
+ .nav-links ul li a.active {
+     color: #32b1fa;
+ }
+ 
+ .nav-links ul li a.active::after {
+     content: "";
+     width: 30%;
+     height: 2px;
+     background-color: #32b1fa;
+     position: absolute;
+     bottom: -2px;
+     left: 20px;
+ }
+
+ .logout-text {
+    position: absolute;
+    top: 150%;
+    left: 0%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+ }
+ 
+ .login-container:hover .logout-text {
+    opacity: 1;
+    pointer-events: auto;
+ }
+
+ .content {
+    width: 100%;
+    height: calc(100vh - 147px);
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50);
+    text-align: center;
+ }
+
+ .content h1 {
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+    color: rgb(39, 39, 39);
+ }
+
+ button {
+    width: 200px;
+    padding: 15px;
+    margin: 20px 15px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #32b1fa;
+    color: aliceblue;
+    border: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+ }
+
+ button:hover {
+    background-color: #0060e6;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+ }
+
+ .content video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+
+
+ /* barter css */
+
+ 
+.h1 {
+  color: #333;
+  margin: 20px;
+}
+.btnn {
+  display: inline-block;
+  background: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
+}
+.badge {
+  background: #ddd;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.h3 {
+   margin: 0.5rem 0 0.2rem 0;
+}
+
+/* Search bar and filter */
+
+  .filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 20px;
+  }
+
+  .filter-form input[type="text"],
+  .filter-form select {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1 1 200px;
+    background-color: rgb(250, 250, 250);
+  }
+
+  .filter-form {
+    padding: 0 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .submit-btn {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+
+   .submit-btn:hover {
+      background-color: #3730a3;
+   }
+
+  .barter_links {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .page-wrapper {
+    min-height: 100vh;
+  }
+   
+  @media (max-width: 600px) {
+    .filter-form {
+      flex-direction: column;
+    }
+  }

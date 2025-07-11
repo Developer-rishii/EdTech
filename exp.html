@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITW Physics</title>
+    <link rel="stylesheet" href="exp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./image/phy_logo.jpeg">
+</head>
+<body>
+    <section class="header">
+       <a href="home.html" class="logo"><img src="./image/phy_logo.jpeg" alt=""></a>
+
+       <div class="nav-links">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a class="active" href="exp.html">Experiments</a></li>
+            <li><a href="barter.php">Barter</a></li>
+            <li><a href="profile.html">About</a></li>
+            <li class="login-container">
+                <a href="index.php">
+                   <i class="fa-solid fa-right-to-bracket"></i>
+                   <span class="logout-text">Logout</span>
+                </a>
+             </li>
+        </ul>
+       </div>
+    </section>
+
+    <section class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search experiments..." onkeyup="filterExperiments()" />
+    </section>
+<!-- 
+    <section class="feature">
+        <div class="fetch-box">
+                <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+                <h6>P-N Junction Diode</h6>
+                <p>Aim:- To study I-V characteristics of P-N Junction Diode.</p>
+                <h4>Experiment No.1</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>P-N Junction Diode</h6>
+            <p>Aim:- To study I-V characteristics of P-N Junction Diode.</p>
+            <h4>Experiment No.1</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>P-N Junction Diode</h6>
+            <p>Aim:- To study I-V characteristics of P-N Junction Diode.</p>
+            <h4>Experiment No.1</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>Determination of Planck’s Constant</h6>
+            <p>Aim:- To determine Planck’s constant by measuring the voltage <br> drop across different colored LEDs.</p>
+            <h4>Experiment No.7</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>Photoelectric Effect</h6>
+            <p>Aim:- To study the photoelectric effect and determine <br> the work function of a material.</p>
+            <h4>Experiment No.8</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>Determine e/m by Thomson’s Method</h6>
+            <p>Aim:- To determine the charge-to-mass ratio (e/m) of <br> an electron using Thomson's method.</p>
+            <h4>Experiment No.9</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>Study of B-H Curve</h6>
+            <p>Aim:- To study the hysteresis curve (B-H curve) of a <br> ferromagnetic material.</p>
+            <h4>Experiment No.10</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>Characteristics of Zener Diode</h6>
+            <p>Aim:- To study the voltage regulation characteristics of a <br> Zener Diode.</p>
+            <h4>Experiment No.2</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>V-I Characteristics of Photodiode</h6>
+            <p>Aim:- To study the V-I characteristics of a Photodiode <br> under different illumination.</p>
+            <h4>Experiment No.3</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>Newton's Rings</h6>
+            <p>Aim:- To determine the wavelength of monochromatic light using <br> Newton's Rings.</p>
+            <h4>Experiment No.4</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>Laser Diffraction</h6>
+            <p>Aim:- To determine the wavelength of laser light using <br> diffraction pattern.</p>
+            <h4>Experiment No.5</h4>
+        </div>
+
+        <div class="fetch-box">
+            <iframe src="https://www.youtube.com/embed/MG5ZhaFWat0?si=Uuta3FqUU7mGTuXS" allowfullscreen="allowfullscreen"></iframe>
+            <h6>Hall Effect</h6>
+            <p>Aim:- To measure the Hall voltage and determine <br> Hall coefficient.</p>
+            <h4>Experiment No.6</h4>
+        </div>
+    </section> -->
+
+    <section class="features" id="experimentContainer"></section>
+
+    <div class="media-links">
+        <a href="https://www.linkedin.com/in/rushikesh-sawarkar-79525630a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/rishi_62727/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/Developer-rishii/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/@helperyt3156" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div> 
+
+    <section class="footer">
+        <div class="info">
+            <h1>Contact Info</h1>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://www.google.com/search?q=physics+lab+bajaj+institute+of+technology+wardha&sca_esv=4d69d7027f1defd9&sxsrf=
+                ADLYWIIMERmlMHcNdI8etoccrjA78VLbQw%3A1724000097363&ei=YSfCZsvgFc6q4-EPp_-dkQE&ved=0ahUKEwiLlZXrgP-HAxVO1TgGHad_JxIQ4dUDCA8&uact=
+                5&oq=physics+lab+bajaj+institute+of+technology+wardha&gs_lp=Egxnd3Mtd2l6LXNlcnAiMHBoeXNpY3MgbGFiIGJhamFqIGluc
+                3RpdHV0ZSBvZiB0ZWNobm9sb2d5IHdhcmRoYTIIECEYoAEYwwQyCBAhGKABGMMESPNmUJsKWMBJcAF4AZABAJgBhgKgAbEVqgEGMC4xLjExuAEDyAEA-
+                AEBmAILoALvEcICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIcEC4YgAQYsAMYQxjHARjIAxiKBRiOBRivAdgBAcICExAuGIAEGLADGEMYyAMYi
+                gXYAQHCAhAQLhiABBjHARgNGI4FGK8BwgIHEAAYgAQYDcICHxAuGIAEGMcBGA0YjgUYrwEYlwUY3AQY3gQY4ATYAQLCA
+                ggQABiABBiiBMICChAhGKABGMMEGAqYAwCIBgGQBgy6BgQIARgIugYGCAIQARgUkgcFMS4xLjmgB-NM&sclient=
+                gws-wiz-serp">First year department, ground floor, BIT, wardha, 442001</a>
+            </div>
+            <div class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:vijay.deshmukh@bitwardha.ac.in">vijay.deshmukh@bitwardha.ac.in</a>
+            </div>
+        </div>
+        <div class="network">
+            <p>Technology</p>
+            <br>
+            <a href="">Developer</a>
+            <a href="">Deploy</a>
+            <a href="">Youtube</a>
+            <a href="">Rushikesh Sawarkar</a>
+        </div>
+        <div class="network">
+            <p>Resources</p>
+            <br>
+            <a href=""> Usage</a>
+            <a href="">Docs</a>
+            <a href="">Support</a>
+            <a href="">Software</a>
+        </div>
+        <div class="network">
+            <p>Network</p>
+            <br>
+            <a href="">Helper yt</a>
+            <a href="">Code Munch </a>
+            <a href="">Avsar</a>
+            <a href="">Engg Physics</a>
+        </div>
+        <div class="network">
+            <p>Company</p>
+            <br>
+            <a href="">About us</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+            <a href="">Engg Physics</a>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Enjoying Physics Lab © 2024</p>
+    </div>
+<script>
+    function filterExperiments() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const boxes = document.querySelectorAll('.fetch-box');
+
+        boxes.forEach(box => {
+            const text = box.innerText.toLowerCase();
+            box.style.display = text.includes(input) ? 'block' : 'none';
+        });
+    }
+
+    function loadExperiments() {
+        fetch("fetch_exp.php")
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById("experimentContainer");
+                container.innerHTML = ""; // Clear old content
+
+                data.forEach(exp => {
+                    const box = document.createElement("div");
+                    box.className = "fetchbox";
+                    box.innerHTML = `
+                        <iframe src="${exp.video_url}" allowfullscreen></iframe>
+                        <h6>${exp.title}</h6>
+                        <p>Aim:- ${exp.aim}</p>
+                        <h4>Experiment No.${exp.experiment_no}</h4>
+                    `;
+                    container.appendChild(box);
+                });
+            })
+            .catch(err => {
+                console.error("Failed to load experiments:", err);
+            });
+        }
+
+    // Call this function on page load
+    window.onload = loadExperiments;
+</script>
+
+</body>
+</html>
