@@ -22,3 +22,6 @@ Manage barter posts (Delete).
 Dynamic sorted list of user accounts.
 Category wise filter.
 
+[![Watch the video](https://img.youtube.com/vi/cbgLyJIFGHI/maxresdefault.jpg)](https://youtu.be/cbgLyJIFGHI)
+
+### [Watch video | Skill Swap Platform | Demo](https://youtu.be/cbgLyJIFGHI)
